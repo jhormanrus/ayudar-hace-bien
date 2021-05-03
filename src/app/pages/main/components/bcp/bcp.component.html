@@ -1,0 +1,70 @@
+<div class="row justify-content-center mt-2 mb-4">
+    <div class="col-12">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 text-center d-none d-lg-block">
+                <div class="row justify-content-center">
+                    <div class="col-9">
+                        <img draggable="false" style="width: 100%;" src="assets/img/bcp.png" alt="caja bcp">
+                    </div>
+                </div>
+                <span class="font-weight-bold">Con tus donaciones llevaremos en nuestra unidad móvil de apoyo humanitario:</span><br>
+                <span>alimento, ayuda y esperanza a familias que sufren a consecuencia de las emergencias, desastres y crisis sanitaria.</span>
+            </div>
+            <div class="col-lg-5 col-md-7 col-12">
+                <h5 class="font-weight-bold text-center mb-3">Dona desde el<br>app del BCP</h5>
+                <div class="card">
+                    <div class="card-body my-2">
+                        <div class="form-group">
+                            <label>Cuenta corriente en SOLES:</label>
+                            <div (click)="hideTooltip()" data-clipboard-target="#nro1" class="input-group copy" data-toggle="tooltip" title="Copiado">
+                                <input id="nro1" class="form-control" type="text" value="1931599572091" readonly>
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-copy"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Código de cuenta interbancario en SOLES:</label>
+                            <div (click)="hideTooltip()" data-clipboard-target="#nro2" class="input-group copy" data-toggle="tooltip" title="Copiado">
+                                <input id="nro2" class="form-control" type="text" value="00219300159957209117" readonly>
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-copy"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Cuenta corriente en DÓLARES:</label>
+                            <div (click)="hideTooltip()" data-clipboard-target="#nro3" class="input-group copy" data-toggle="tooltip" title="Copiado">
+                                <input id="nro3" class="form-control" type="text" value="1931603205199" readonly>
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-copy"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Código de cuenta interbancario en DÓLARES:</label>
+                            <div (click)="hideTooltip()" data-clipboard-target="#nro4" class="input-group copy" data-toggle="tooltip" title="Copiado">
+                                <input id="nro4" class="form-control" type="text" value="00219300160320519913" readonly>
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-copy"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center mt-4 mb-1">
+                            <button (click)="openApp()" class="btn btn-bcp font-weight-bold">
+                                ABRIR APP <i class="fa fa-external-link"></i>
+                            </button>
+                            <ng-container *ngIf="!isPhone()">
+                                <br><span class="text-white">Solo en celulares</span>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3 d-block d-lg-none">
+                    <span class="font-weight-bold">Con tus donaciones llevaremos en nuestra unidad móvil de apoyo humanitario:</span><br>
+                    <span>alimento, ayuda y esperanza a familias que sufren a consecuencia de las emergencias, desastres y crisis sanitaria.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

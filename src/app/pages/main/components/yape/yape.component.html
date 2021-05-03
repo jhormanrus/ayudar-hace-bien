@@ -1,0 +1,53 @@
+<div class="row justify-content-center mt-2 mb-4">
+    <div class="col-12">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 text-center d-none d-lg-block">
+                <div class="row justify-content-center">
+                    <div class="col-9">
+                        <img draggable="false" style="width: 100%;" src="assets/img/yape.png" alt="caja yape">
+                    </div>
+                </div>
+                <span class="font-weight-bold">Con tus donaciones llevaremos en nuestra unidad móvil de apoyo humanitario:</span><br>
+                <span>alimento, ayuda y esperanza a familias que sufren a consecuencia de las emergencias, desastres y crisis sanitaria.</span>
+            </div>
+            <div class="col-lg-5 col-md-7 col-12">
+                <h5 class="font-weight-bold text-center mb-3">Dona desde el<br>app de Yape</h5>
+                <div class="card">
+                    <div class="card-body my-2">
+                        <div class="row justify-content-center">
+                            <div class="col-8 col-md-7">
+                                <div class="form-group">
+                                    <label>GUARDA EL NÚMERO Y YAPEA AL</label>
+                                    <div (click)="hideTooltip()" data-clipboard-target="#nro" class="input-group mt-2 copy" data-toggle="tooltip" title="Copiado">
+                                        <input id="nro" class="form-control" type="text" value="997555048" readonly>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-copy"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <label>O abre tu app Yape y escanea este código QR</label>
+                                    <div class="w-100 d-flex justify-content-center mt-2">
+                                        <img draggable="false" style="width: 80%; object-fit: contain;" src="assets/img/qr-yape.png" alt="qr yape">
+                                    </div>
+                                </div>
+                                <div class="form-group text-center mt-4 mb-1">
+                                    <button (click)="openApp()" class="btn btn-yape font-weight-bold">
+                                        ABRIR APP <i class="fa fa-external-link"></i>
+                                    </button>
+                                    <ng-container *ngIf="!isPhone()">
+                                        <br><span class="text-white">Solo en celulares</span>
+                                    </ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3 d-block d-lg-none">
+                    <span class="font-weight-bold">Con tus donaciones llevaremos en nuestra unidad móvil de apoyo humanitario:</span><br>
+                    <span>alimento, ayuda y esperanza a familias que sufren a consecuencia de las emergencias, desastres y crisis sanitaria.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

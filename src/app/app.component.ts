@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ayudar-hace-bien-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: []
 })
-export class AppComponent {
-  title = 'ayudar-hace-bien';
-}
+export class AppComponent { }
