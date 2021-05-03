@@ -1,6 +1,4 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import scrollSnapPolyfill from 'css-scroll-snap-polyfill';
 declare var $: any;
 
 @Component({
@@ -22,6 +20,5 @@ export class LandingComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     $('body').addClass('loaded')
-    scrollSnapPolyfill()
   }
 }

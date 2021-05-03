@@ -23,7 +23,6 @@
     "@ng-bootstrap/ng-bootstrap": "^9.1.0",
     "bootstrap": "^4.6.0",
     "clipboard": "^2.0.8",
-    "css-scroll-snap-polyfill": "^0.1.2",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "ngx-metafrenzy": "^6.0.0",
