@@ -17,7 +17,6 @@ export class BcpComponent implements OnInit {
     this.metafrenzyService.setOpenGraph({
       title: '#AyudarHaceBien - BCP',
       site_name: 'AyudarHaceBien',
-      image: 'https://i.ibb.co/6Zr9yMB/bcp.jpg',
       url: 'http://ayudarhacebien.pe/bcp',
       'image:secure_url': 'https://i.ibb.co/6Zr9yMB/bcp.jpg',
       'image:width': '960',

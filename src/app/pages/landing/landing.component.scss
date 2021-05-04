@@ -1,6 +1,6 @@
-* {
-	box-sizing: border-box;
-}
+:root {
+    --app-height: 100%;
+ }
 
 .container {
     max-width: unset !important;
@@ -12,7 +12,6 @@
         scroll-snap-type: y mandatory;
     }
     &-main {
-        background-image: url(../../../assets/img/mob-background.jpg);
         background-size: cover;
         background-position: 50% center;
     }
@@ -22,8 +21,8 @@ ul {
     margin: 0;
     li {
         scroll-snap-align: start;
-        height: 100vh;
         display: flex;
         flex-flow: column;
+        height: var(--app-height) !important;
     }
 }

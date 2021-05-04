@@ -4,7 +4,7 @@
 			<div class="container bg-green">
 				<p class="text-center m-0">PARTICIPA COMO VOLUNTARIO</p>
 			</div>
-      <div class="container container-main h-100">
+      <div class="container container-main h-100" [style.background-image]="(appOrientation === 0 || appOrientation === 180)? 'url(assets/img/mob-background.jpg)' : null">
         <div class="row justify-content-center h-100">
           <div class="col-lg-3 col-md-4 col-sm-5 col-7">
             <div class="d-md-none row justify-content-center mt-2">
@@ -15,7 +15,7 @@
             <img draggable="false" style="width: 100%;" src="assets/img/logo-campaña-no-margin.png" alt="isologo">
           </div>
           <div class="col-12 d-flex justify-content-center align-items-end">
-            <button [routerLink]="['']" class="btn btn-colabora font-weight-bold mb-5">COLABORA AQUÍ</button>
+            <button (click)="goHome()" class="btn btn-colabora font-weight-bold mb-5">COLABORA AQUÍ</button>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
       <div class="container bg-white h-100 d-flex align-items-center">
         <div class="row">
           <div class="col-12">
-            <p class="text-center mb-2 d-sm-none"><small>PROYECTOS DE ADRA CONTRA<br>LA COVID-19 DEL 2020 A MARZO 2021</small></p>
+            <p class="text-center mb-1 d-sm-none"><small>PROYECTOS DE ADRA CONTRA<br>LA COVID-19 DEL 2020 A MARZO 2021</small></p>
             <p class="text-center mb-1 d-none d-sm-block"><small>PROYECTOS DE ADRA CONTRA LA COVID-19 DEL 2020 A MARZO 2021</small></p>
           </div>
           <div class="col-12">
@@ -50,19 +50,19 @@
             </div>
           </div>
           <div class="col-12 p-0">
-            <h6 class="text-center font-weight-bold my-4 d-sm-none">"Tu ayuda regresa la sonrisa a<br>quienes lo perdieron todo"</h6>
-            <h6 class="text-center font-weight-bold mt-1 mb-3 d-none d-sm-block">"Tu ayuda regresa la sonrisa a quienes lo perdieron todo"</h6>
+            <h6 class="text-center font-weight-bold mb-2 d-sm-none">"Tu ayuda regresa la sonrisa a<br>quienes lo perdieron todo"</h6>
+            <h6 class="text-center font-weight-bold mt-1 mb-2 d-none d-sm-block">"Tu ayuda regresa la sonrisa a quienes lo perdieron todo"</h6>
             <div class="d-flex justify-content-center">
               <youtube-player 
-                videoId="lRTtMcx6rSM"
+                videoId="x48_xFIysok"
                 suggestedQuality="default"
                 height="auto" 
                 width="auto">
               </youtube-player>
             </div>
           </div>
-          <div class="col-12 text-center">
-            <button [routerLink]="['']" class="btn btn-colabora font-weight-bold mt-4">COLABORA AQUÍ</button>
+          <div class="col-12 d-flex justify-content-center">
+            <button (click)="goHome()" class="btn btn-colabora font-weight-bold mt-3 mt-sm-1">COLABORA AQUÍ</button>
           </div>
         </div>
       </div>
@@ -71,10 +71,10 @@
       <div class="container bg-white h-100 d-flex align-items-center">
         <div class="row justify-content-center">
           <div class="col-12">
-            <h5 class="text-center font-weight-bold">Razones para colaborar</h5>
+            <h5 class="text-center font-weight-bold m-sm-0">Razones para colaborar</h5>
           </div>
-          <div class="col-12 col-sm-6">
-            <div class="form-row text-green razones my-4">
+          <div class="col-12 col-sm-7">
+            <div class="form-row text-green razones my-4 my-sm-3">
               <div class="col-3">
                 <div class="d-flex justify-content-center">
                   <img draggable="false" src="assets/img/cambia-vidas.png" alt="cambia-vidas">
@@ -103,13 +103,15 @@
           </div>
           <div class="col-12">
             <h6 class="text-center font-weight-bold mt-1">Desde 1954 brindamos ayuda humanitaria a las personas que lo perdieron todo.</h6>
-            <p class="my-4 text-center"><small>Nuestra organización realiza cada año un programa de transparencia a través de nuestros canales digitales. CLIC AQUÍ</small></p>
+            <p class="my-4 my-sm-2 text-center"><small>Nuestra organización realiza cada año un programa de transparencia a través de nuestros canales digitales. CLIC AQUÍ</small></p>
             <div class="col-12 text-center">
-              <button [routerLink]="['']" class="btn btn-colabora font-weight-bold">COLABORA AQUÍ</button>
+              <button (click)="goHome()" class="btn btn-colabora font-weight-bold mt-sm-1">COLABORA AQUÍ</button>
             </div>
           </div>
         </div>
       </div>
+    </li>
+    <li style="height: unset !important;">
       <div class="container bg-orange">
 				<p class="text-center m-0">Otorgamos certificado de donación</p>
 			</div>

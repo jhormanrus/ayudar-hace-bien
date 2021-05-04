@@ -13,7 +13,6 @@ export class InicioComponent {
     this.metafrenzyService.setOpenGraph({
       title: '#AyudarHaceBien',
       site_name: 'AyudarHaceBien',
-      image: 'https://i.ibb.co/pXNB4tP/COMPARTE-REDES-SOCIALES-IMAGEN-PREVIA.png',
       url: 'http://ayudarhacebien.pe',
       'image:secure_url': 'https://i.ibb.co/pXNB4tP/COMPARTE-REDES-SOCIALES-IMAGEN-PREVIA.png',
       'image:width': '960',

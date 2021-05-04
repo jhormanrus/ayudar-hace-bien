@@ -17,7 +17,6 @@ export class YapeComponent implements OnInit {
     this.metafrenzyService.setOpenGraph({
       title: '#AyudarHaceBien - Yape',
       site_name: 'AyudarHaceBien',
-      image: 'https://i.ibb.co/grwfgkx/yape.jpg',
       url: 'http://ayudarhacebien.pe/yape',
       'image:secure_url': 'https://i.ibb.co/grwfgkx/yape.jpg',
       'image:width': '960',
