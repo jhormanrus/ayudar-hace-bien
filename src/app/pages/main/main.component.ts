@@ -10,10 +10,10 @@ declare var $: any;
 export class MainComponent implements AfterViewInit {
 
   year = new Date().getFullYear() //* Current year for footer
-  main = '/main'
-  yape = '/main/yape'
-  bcp = '/main/bcp'
-  bbva = '/main/bbva'
+  main = '/h'
+  yape = '/h/yape'
+  bcp = '/h/bcp'
+  bbva = '/h/bbva'
 
   constructor(private router: Router) { }
 
