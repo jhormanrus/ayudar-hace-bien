@@ -4,15 +4,15 @@
 			<div class="container bg-green">
 				<p class="text-center m-0">PARTICIPA COMO VOLUNTARIO</p>
 			</div>
-      <div class="container container-main h-100" [style.background-image]="(appOrientation === 0 || appOrientation === 180)? 'url(assets/img/mob-background.jpg)' : null">
+      <div class="container container-main h-100" [style.background-image]="(appOrientation === 0 || appOrientation === 180)? 'url(assets/img/mob-background.jpg)' : ((appOrientation === 90 || appOrientation === -90)? null : 'url(assets/img/full-background.jpg)')">
         <div class="row justify-content-center h-100">
           <div class="col-lg-3 col-md-4 col-sm-5 col-7">
-            <div class="d-md-none row justify-content-center mt-2">
-              <div class="col-8">
+            <div class="d-md-none d-lg-flex row justify-content-center mt-2">
+              <div class="col-8 col-lg-6">
                 <img draggable="false" style="width: 100%;" src="assets/img/adra-horizontal-logo.png" alt="logo">
               </div>
             </div>
-            <img draggable="false" style="width: 100%;" src="assets/img/logo-campaña-no-margin.png" alt="isologo">
+            <img class="px-lg-2" draggable="false" style="width: 100%;" src="assets/img/logo-campaña-no-margin.png" alt="isologo">
           </div>
           <div class="col-12 d-flex justify-content-center align-items-end">
             <button (click)="goHome()" class="btn btn-colabora font-weight-bold mb-5">COLABORA AQUÍ</button>
@@ -22,12 +22,12 @@
     </li>
     <li>
       <div class="container bg-white h-100 d-flex align-items-center">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-12">
             <p class="text-center mb-1 d-sm-none"><small>PROYECTOS DE ADRA CONTRA<br>LA COVID-19 DEL 2020 A MARZO 2021</small></p>
             <p class="text-center mb-1 d-none d-sm-block"><small>PROYECTOS DE ADRA CONTRA LA COVID-19 DEL 2020 A MARZO 2021</small></p>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-8 col-lg-6">
             <div class="form-row text-center justify-content-center my-2 mx-0">
               <div class="col-5 col-sm-3">
                 <div class="bg-green px-1">
@@ -73,7 +73,7 @@
           <div class="col-12">
             <h5 class="text-center font-weight-bold m-sm-0">Razones para colaborar</h5>
           </div>
-          <div class="col-12 col-sm-7">
+          <div class="col-12 col-sm-7 col-md-5 col-lg-4">
             <div class="form-row text-green razones my-4 my-sm-3">
               <div class="col-3">
                 <div class="d-flex justify-content-center">

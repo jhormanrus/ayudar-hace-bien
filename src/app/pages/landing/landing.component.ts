@@ -20,7 +20,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
       doc.style.setProperty('--app-height', `${window.innerHeight}px`)
     }
     const appOrientation = () => {
-      this.appOrientation = screen.orientation.angle
+      this.appOrientation = +window.orientation
     }
     window.addEventListener('resize', appHeight)
     window.addEventListener("orientationchange", appOrientation)

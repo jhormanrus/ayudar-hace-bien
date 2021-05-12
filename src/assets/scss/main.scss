@@ -210,6 +210,8 @@ span {
     width: 100%;
     img {
         width: 70%;
+        height: 70%;
+        object-fit: contain;
     }
     h6 {
         font-size: 0.74rem;
