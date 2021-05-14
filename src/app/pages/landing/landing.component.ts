@@ -37,7 +37,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
   }
 
   goHome() {
-    this.router.navigate(['h'])
+    this.router.navigate(['donaciones'])
     $('body').removeClass('loaded')
   }
 }
