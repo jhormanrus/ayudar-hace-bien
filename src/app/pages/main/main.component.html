@@ -1,47 +1,37 @@
-<img class="voluntario d-none d-md-block es-de mr-4 mt-2" src="assets/img/adra-horizontal-logo.png" alt="adra" draggable="false">
-<img class="voluntario d-none d-md-block es-iz ml-4 mt-1" src="assets/img/auxilio-para-desastres-logo.png" alt="auxilio-para-desastres" draggable="false">
-<div class="container">
-    <div class="row justify-content-center mt-3">
-        <div class="col-lg-3 col-md-4 col-sm-5 col-7">
-            <div class="d-md-none row justify-content-center my-2">
-                <div class="col-8">
-                    <img draggable="false" style="width: 100%;" src="assets/img/adra-horizontal-logo.png" alt="logo">
-                </div>
+<div class="container-main">
+
+
+    <div class="content-links">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="col-12">
+        <div class="row justify-content-center">
+            <div class="col-12 justify-content-center d-flex mb-3">
+                <span class="text-center">Haz que estas alcancías lleguen a más personas. ¡Comparte!</span>
             </div>
-            <img draggable="false" style="width: 100%;" src="assets/img/logo-campaña.png" alt="isologo">
-        </div>
-        <div class="col-12">
-            <router-outlet></router-outlet>
-        </div>
-        <div class="col-12 mb-3">
-            <div class="row justify-content-center">
-                <div class="col-12 justify-content-center d-flex mb-3">
-                    <span class="text-center">Haz que estas alcancías lleguen a más personas. ¡Comparte!</span>
-                </div>
-                <div class="col-10 text-center">
-                    <button (click)="openFacebook()" class="btn btn-sm btn-social m-1">
-                        <i class="fa fa-facebook-f"></i> Facebook
-                    </button>
-                    <button (click)="openWhatsapp()" class="btn btn-sm btn-social m-1">
-                        <i class="fa fa-whatsapp"></i> Whatsapp
-                    </button>
-                    <button (click)="openTwitter()" class="btn btn-sm btn-social m-1">
-                        <i class="fa fa-twitter"></i> Twitter
-                    </button>
-                    <a href="https://www.linkedin.com/company/adra-per%C3%BA/" class="btn btn-sm btn-social m-1">
-                        <i class="fa fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
+            <div class="col-10 text-center">
+                <button (click)="openFacebook()" class="btn btn-sm btn-social m-1">
+                    <i class="fab fa-facebook-square"></i> Facebook
+                </button>
+                <button (click)="openWhatsapp()" class="btn btn-sm btn-social m-1">
+                    <i class="fab fa-whatsapp-square"></i> Whatsapp
+                </button>
+                <button (click)="openTwitter()" class="btn btn-sm btn-social m-1">
+                    <i class="fab fa-twitter-square"></i> Twitter
+                </button>
+                <a href="https://www.linkedin.com/company/adra-per%C3%BA/" class="btn btn-sm btn-social m-1">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="voluntario" >
+            <p>!Juntos podemos unir gente extraordinaria para grandes causas!</p>
+            <a class="btn btn-voluntario" href="https://www.adra.org.pe/voluntariado">Hazte voluntario</a>
+        </div>
+        <div class="certificado">
+            Otorgamos certificado de donación 
+        </div>
+    </footer>
 </div>
-<footer class="footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="credits ml-auto mr-4 mb-4">
-                <span class="copyright"> © {{ year }}, Hecho con <i class="fa fa-heart heart"></i> por ADRA Perú </span>
-            </div>
-        </div>
-    </div>
-</footer>

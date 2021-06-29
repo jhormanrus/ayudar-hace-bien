@@ -4,7 +4,7 @@ import { MetafrenzyService } from 'ngx-metafrenzy';
 @Component({
   selector: 'salvando-con-diez-inicio',
   templateUrl: './inicio.component.html',
-  styles: []
+  styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent {
 

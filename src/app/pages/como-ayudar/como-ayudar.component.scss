@@ -1,0 +1,217 @@
+
+
+.container-ayuda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    min-height: 70vh;
+    background-color: white;
+    p{
+        text-align: center;
+    }
+
+}
+
+.notice{
+    background: var(--color-green-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+
+    position: relative;
+    z-index: 1;
+    p{
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    &__action{
+        background-color: var(--color-yellow-1);
+        color: black;
+        font-weight: bold;
+    }
+    img{
+        width: 100px;
+    }
+    
+    &__map{
+        position: absolute;
+        opacity: 8;
+        top:20%;
+        right: 0;
+        z-index: -1;
+    }
+    &__point{
+        position: absolute;
+        top:20%;
+        opacity: 0.2;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+
+.boxes{
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+    .box{
+        border: 2px solid var(--color-green-1);
+        border-radius: 10px 10px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        p{
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: .75rem;
+        }
+        img:hover{
+            transform: scale(1);
+        }
+
+        &__kilo{
+            position: absolute;
+            right: -20px;
+            top: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-green-1);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            font-weight: bold;
+            span{
+                font-size: .6rem;
+
+            }
+            .number{
+                font-size: 1rem;
+            }
+        }
+        
+        &__action{
+            background: var(--color-red-1);
+            color: white;
+            width: 102%;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 20px;
+
+            position: relative;
+            top: 5px;
+            left: -2px;
+            border:1px solid red ;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 880px) {
+    .content-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .container-ayuda{
+            flex: 5;
+            
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+                height: 0vh;
+                background-color: white;
+
+        }
+        .notice{
+            flex-basis: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+} 
+@media (max-width: 880px) and (min-width: 385px) { 
+
+    .boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        .box{
+            img{
+                width: 150px;
+            }
+            &__kilo{
+                width: 40px;
+                height: 40px;
+                span{
+                    font-size: .4rem;
+    
+                }
+                .number{
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 385px) and  (min-width: 0px){ 
+
+    .container-ayuda{
+        margin-top: 40px;
+    }
+    .boxes{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        .box{
+            img{
+                width: 120px;
+            }
+            &__kilo{
+                width: 40px;
+                height: 40px;
+                right: -20px;
+                top: 80px;
+                span{
+                    font-size: .4rem;
+    
+                }
+                .number{
+                    font-size: .6rem;
+                }
+            }
+            &__action{
+                font-size: .8rem;
+            }
+        }
+    }
+
+
+    .notice{
+        
+        p{
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}

@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { PorqueAyudarComponent } from './pages/porque-ayudar/porque-ayudar.component';
+import { ComoAyudarComponent } from './pages/como-ayudar/como-ayudar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    PorqueAyudarComponent,
+    ComoAyudarComponent
   ],
   imports: [
     AppRoutingModule,

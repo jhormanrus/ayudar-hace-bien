@@ -1,0 +1,30 @@
+<div class="content-page">
+    <div class="hero">
+        <h2 class="title-page">{{ title }}</h2>
+        <iframe class="video-yt" style="border-radius: 15px;" src="https://www.youtube.com/embed/E7tPBQ6VBNo"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <footer class="footer-web">
+        <h3 class="title-page">¿Por qué Ayudar?</h3>
+        <p>ADRA PERU en acción durante la pandemia</p>
+        <div class="actions" >
+            <div class="action {{i == 1 ? 'separator': ''}}" *ngFor="let item of links;let i = index">
+                <span>{{item.title}}</span>
+                <img src="./../../../assets/img/video.png" width="50"/>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-mobile">
+        <h3 class="title-page">¿Por qué Ayudar?</h3>
+        <p>ADRA PERU en acción durante la pandemia</p>
+        <div class="actions" >
+            <div class="action" *ngFor="let item of links;let i = index">
+                <span>{{item.title}}</span>
+                <img src="./../../../assets/img/video.png" width="50"/>
+            </div>
+        </div>
+    </footer>
+</div>

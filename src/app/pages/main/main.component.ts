@@ -5,7 +5,7 @@ declare var $: any;
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styles: []
+  styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements AfterViewInit {
 
