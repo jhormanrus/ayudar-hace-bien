@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     MetafrenzyModule.forRoot(),
     HttpClientModule
   ],
