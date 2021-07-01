@@ -4,9 +4,7 @@
     justify-content: center;
     align-items: center;
     margin: 25px 0;
-
     h2{
-        
         color: #007C5D;
         font-weight: bold;
         font-size: 2rem;
@@ -16,7 +14,6 @@
     p{
         text-align: center;
     }
-
     .donacion{
         margin-top: 30px;
         font-size: 1.3rem;
@@ -35,12 +32,9 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        height: 100vh;
-        margin: -100px 0;
         *{
             margin: 0;
         }
-        
     }
 } 
 
@@ -61,15 +55,11 @@
 }
 
 @media (max-width: 385px) and  (min-width: 0px){ 
-
     .container-inicio{
-    
         p{
-
             font-size: .9rem;
             width: 250px;
         }
-    
         .donacion{
             margin-top: 30px;
             font-size: .9rem;

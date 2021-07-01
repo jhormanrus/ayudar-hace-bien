@@ -1,12 +1,12 @@
 <div class="container-home">
   <img class="container-home__image" src="assets/img/logo-campaña-no-margin.png" alt="ayudar hace bien"/>
-  <p class="container-home__description">Tu ayuda devuelve la sonrisa a las personas que lo perdieron todo.</p>
+  <p class="container-home__description mt-3">Tu ayuda devuelve la sonrisa a las personas que lo perdieron todo.</p>
   <div class="goal">
     <p class="goal__title">Meta:</p>
-    <h4 class="goal__total">120 toneladas</h4>
+    <h4 class="goal__total">{{ data? data.metaToneladas : 0 }} toneladas</h4>
     <div class="progress goal__progress">
-      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+      <div class="progress-bar" role="progressbar" [style.width.%]="data? data.porcentajeToneladas : 0" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{ data? data.porcentajeToneladas : 0 }}%</div>
     </div>
   </div>
-  <button class="btn btn-colaborate animate__animated animate__bounce">Colabora Aquí</button>
+  <button (click)="goHome()" class="btn btn-colaborate animate__animated animate__bounce">COLABORA AQUÍ</button>
 </div>

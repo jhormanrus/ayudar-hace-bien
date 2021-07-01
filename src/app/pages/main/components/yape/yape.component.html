@@ -1,7 +1,7 @@
 <div class="row justify-content-center mt-2 mb-4">
     <div class="col-12">
         <div class="row justify-content-center align-items-center">
-            <div class="col-4 text-center d-none d-lg-block">
+            <div class="col-xl-3 col-4 text-center d-none d-lg-block">
                 <div class="row justify-content-center">
                     <div class="col-9">
                         <img draggable="false" style="width: 70%;" src="assets/img/yape.png" alt="caja yape">
@@ -12,7 +12,7 @@
             </div>
             <div class="col-lg-4 col-md-5 col-12">
                 <h5 class="font-weight-bold text-center mb-3">Dona desde el<br>app de Yape</h5>
-                <div class="card" style="width: 90%;margin: 0 auto;">
+                <div class="card">
                     <div class="card-body my-1">
                         <div class="row justify-content-center">
                             <div class="col-8 col-md-7">
@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="form-group text-center mt-4 mb-1">
                                     <button (click)="openApp()" class="btn btn-yape font-weight-bold">
-                                        ABRIR APP <i class="fa fa-external-link"></i>
+                                        ABRIR APP <i class="fa fa-external-link-alt"></i>
                                     </button>
                                     <ng-container *ngIf="!isPhone()">
                                         <br><span class="text-white">Solo en celulares</span>

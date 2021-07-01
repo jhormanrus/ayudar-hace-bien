@@ -1,9 +1,8 @@
 .container-main{
-    padding-top: 90px;
+    padding-top: 110px;
     min-height: 100vh;
     background-color: white;
 }
-
 
 .voluntario{
     background-color: var(--color-green-1);
@@ -62,14 +61,13 @@
         p{
             display: none;
         }
-        .btn-voluntario{
-
-        }
+    }
+    .content-links{
+        padding-top: 40px;
     }
 }
 
 @media (max-width: 385px) and  (min-width: 0px){ 
-
     .content-links{
         padding-top: 40px;
     }

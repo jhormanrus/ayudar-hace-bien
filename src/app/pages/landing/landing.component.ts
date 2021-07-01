@@ -1,5 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { take } from 'rxjs/operators';
+import { Data } from 'src/app/services/data.model';
+import { MainService } from 'src/app/services/main.service';
 declare var $: any;
 
 @Component({
@@ -8,28 +11,15 @@ declare var $: any;
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit, AfterViewInit {
+  
+  data: Data
 
-  year = new Date().getFullYear() //* Current year for footer
-  appOrientation: number
-
-  constructor(private router: Router) { }
+  constructor(private sMain: MainService, private router: Router) { }
 
   ngOnInit(): void {
-    const appHeight = () => {
-      const doc = document.documentElement
-      doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-    }
-    const appOrientation = () => {
-      this.appOrientation = +window.orientation
-    }
-    window.addEventListener('resize', appHeight)
-    window.addEventListener("orientationchange", appOrientation)
-    appHeight()
-    appOrientation()
-
-    const tag = document.createElement('script')
-    tag.src = "https://www.youtube.com/iframe_api"
-    document.body.appendChild(tag)
+    this.sMain.readData().pipe(take(1)).subscribe(response => {
+      this.data = response
+    })
   }
 
   ngAfterViewInit(): void {
@@ -37,7 +27,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
   }
 
   goHome() {
-    this.router.navigate(['donaciones'])
+    this.router.navigate(['como-donar'])
     $('body').removeClass('loaded')
   }
 }
