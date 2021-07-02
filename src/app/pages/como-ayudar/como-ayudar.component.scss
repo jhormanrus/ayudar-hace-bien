@@ -170,12 +170,7 @@
 }
 
 @media (max-width: 385px) and  (min-width: 0px){ 
-
-    .container-ayuda{
-        margin-top: 40px;
-    }
     .boxes{
-        
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;

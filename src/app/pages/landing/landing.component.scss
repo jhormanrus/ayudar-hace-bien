@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding-top: 60px;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 110px;
     gap: 10px;
     background-color: white;
     &__image{
@@ -54,6 +55,7 @@
     background-color: var(--color-red-1);
     color: white;
     margin-top: 20px;
+    margin-bottom: 40px;
     font-weight: 600;
     border-radius: 30px;
     padding: 5px 20px;
