@@ -1,6 +1,6 @@
-<div class="content-page">
+<div id="porqueayudar" class="content-page">
     <div class="hero">
-        <h2 class="title-page">Sonrisas Compartidas</h2>
+        <h2 class="title-page my-2">Video promocional</h2>
         <iframe class="video-yt" style="border-radius: 15px;" src="https://www.youtube.com/embed/E7tPBQ6VBNo"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -10,10 +10,10 @@
         <h3 class="title-page">¿Por qué Ayudar?</h3>
         <p class="mt-2">ADRA PERÚ en acción durante la pandemia</p>
         <div *ngIf="links" class="actions" >
-            <div (click)="openLink(item.link)" class="action {{i == 1 ? 'separator': ''}}" *ngFor="let item of links; let i = index">
+            <a (click)="openLink(item.link)" class="action {{i == 1 ? 'separator': ''}}" *ngFor="let item of links;let i = index">
                 <span>{{ item.description }}</span>
                 <img src="./../../../assets/img/video.png" width="50"/>
-            </div>
+            </a>
         </div>
     </footer>
 
@@ -21,10 +21,10 @@
         <h3 class="title-page">¿Por qué Ayudar?</h3>
         <p>ADRA PERÚ en acción durante la pandemia</p>
         <div *ngIf="links" class="actions" >
-            <div (click)="openLink(item.link)" class="action" *ngFor="let item of links; let i = index">
+            <a (click)="openLink(item.link)" class="action" *ngFor="let item of links;let i = index">
                 <span>{{ item.description }}</span>
                 <img src="./../../../assets/img/video.png" width="50"/>
-            </div>
+            </a>
         </div>
     </footer>
 </div>

@@ -1,7 +1,7 @@
-<div class="row justify-content-center mt-2 mb-4">
+<div class="row justify-content-center my-3">
     <div class="col-12">
         <div class="row justify-content-center align-items-center">
-            <div class="col-xl-3 col-4 text-center d-none d-lg-block">
+            <div class="col-4 text-center d-none d-lg-block">
                 <div class="row justify-content-center">
                     <div class="col-9">
                         <img draggable="false" style="width: 70%;" src="assets/img/yape.png" alt="caja yape">
@@ -10,12 +10,12 @@
                 <span class="font-weight-bold">Con tus donaciones llevaremos en nuestra unidad móvil de apoyo humanitario:</span><br>
                 <span>alimento, ayuda y esperanza a familias que sufren a consecuencia de las emergencias, desastres y crisis sanitaria.</span>
             </div>
-            <div class="col-lg-4 col-md-5 col-12">
+            <div class="col-md-5 col-12">
                 <h5 class="font-weight-bold text-center mb-3">Dona desde el<br>app de Yape</h5>
                 <div class="card">
                     <div class="card-body my-1">
                         <div class="row justify-content-center">
-                            <div class="col-8 col-md-7">
+                            <div class="col-10 col-md-10 col-lg-7">
                                 <div class="form-group">
                                     <label>GUARDA EL NÚMERO Y YAPEA AL</label>
                                     <div (click)="hideTooltip()" data-clipboard-target="#nro" class="input-group mt-2 copy" data-toggle="tooltip" title="Copiado">
@@ -32,12 +32,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group text-center mt-4 mb-1">
-                                    <button (click)="openApp()" class="btn btn-yape font-weight-bold">
+                                    <button *ngIf="isPhone()" (click)="openApp()" class="btn btn-yape font-weight-bold">
                                         ABRIR APP <i class="fa fa-external-link-alt"></i>
                                     </button>
-                                    <ng-container *ngIf="!isPhone()">
-                                        <br><span class="text-white">Solo en celulares</span>
-                                    </ng-container>
+                                    <button *ngIf="!isPhone()" (click)="openWeb()" class="btn btn-yape font-weight-bold">
+                                        ABRIR WEB <i class="fa fa-external-link-alt"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>

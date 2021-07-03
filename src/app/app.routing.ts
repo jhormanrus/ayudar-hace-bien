@@ -7,8 +7,6 @@ import { PorqueAyudarComponent } from './pages/porque-ayudar/porque-ayudar.compo
 const routes: Routes = [
   { path: 'como-donar', loadChildren: () => import('./pages/main/main.module').then(m => m.MainModule) },
   { path: '', component: LandingComponent },
-  { path: 'porque-ayudar', component: PorqueAyudarComponent },
-  { path: 'como-ayudar', component: ComoAyudarComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

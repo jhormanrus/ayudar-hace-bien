@@ -1,6 +1,9 @@
 .container-main{
-    padding-top: 110px;
+    padding-top: 82px;
     min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: white;
 }
 
@@ -12,7 +15,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 60px;
+    min-height: 60px;
 
     p{
         margin: 0;
@@ -47,8 +50,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        
-        height: 165px;
+        min-height: 60px;
         .voluntario{
             position: relative;
         bottom: 0;
@@ -58,9 +60,9 @@
 
 @media (max-width: 830px) and (min-width:0) { 
     .voluntario{
-        p{
-            display: none;
-        }
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
     }
 }
 

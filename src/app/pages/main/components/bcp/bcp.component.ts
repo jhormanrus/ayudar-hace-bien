@@ -46,6 +46,10 @@ export class BcpComponent implements OnInit {
     }
   }
 
+  openWeb() {
+    window.open('https://www.viabcp.com/canales/banca-por-internet', '_blank')
+  }
+
   isPhone() {
     const userAgent = navigator.userAgent || navigator.vendor
     if (/android/i.test(userAgent)) {

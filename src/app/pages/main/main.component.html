@@ -1,13 +1,13 @@
 <div class="container-main">
-    <div class="content-links mx-3">
+    <div class="col-12 d-flex justify-content-center align-items-center" style="flex: 1;">
         <router-outlet></router-outlet>
     </div>
     <div class="col-12">
         <div class="row justify-content-center">
-            <div class="col-12 justify-content-center d-flex">
+            <div class="col-12 justify-content-center d-flex mt-3">
                 <span class="text-center">Haz que estas alcancías lleguen a más personas. ¡Comparte!</span>
             </div>
-            <div class="col-10 text-center my-3">
+            <div class="col-10 text-center mt-3 mb-4">
                 <button (click)="openFacebook()" class="btn btn-sm btn-social m-1">
                     <i class="fab fa-facebook-square"></i> Facebook
                 </button>
@@ -24,12 +24,9 @@
         </div>
     </div>
     <footer>
-        <div class="voluntario" >
-            <p>!Juntos podemos unir gente extraordinaria para grandes causas!</p>
-            <a class="btn btn-voluntario" href="https://www.adra.org.pe/voluntariado">HAZTE VOLUNTARIO</a>
-        </div>
-        <div class="certificado">
-            Otorgamos certificado de donación 
+        <div class="voluntario text-center">
+            <p>!Registra tu depósito y accede al certificado de donación!</p>
+            <a class="btn btn-voluntario" href="https://www.adra.org.pe/voluntariado">CLIC AQUÍ</a>
         </div>
     </footer>
 </div>

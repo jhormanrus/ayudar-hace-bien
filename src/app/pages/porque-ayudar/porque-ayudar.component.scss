@@ -5,6 +5,12 @@
     gap: 20px;
 }
 
+.content-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .footer-mobile{
     display: none;
     padding-bottom: 20px;
@@ -13,6 +19,7 @@
     }
     .actions{
         width: 300px;
+        max-width: 90%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -76,11 +83,9 @@
 
 @media screen and (min-width: 1280px) {
     .content-page{
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
         .hero{
-            flex: 5;
+            flex: 1;
             display: flex;
             justify-content: center;
             .video-yt{
@@ -102,19 +107,25 @@
 } 
 
 
- @media (max-width: 1200px) and (min-width: 830px){ 
-    .hero{
-        .video-yt{
-            width: 560px;
-            height: 360px;
+ @media (max-width: 1200px) and (min-width: 830px){
+     .content-page {
+        justify-content: space-between;
+        .hero{
+            flex: 1;
+            justify-content: center;
+            .video-yt{
+                width: 560px;
+                height: 360px;
+            }
         }
-    }
+     }
  }
 
 @media (max-width: 830px) and (min-width:0) { 
     .hero{
         .video-yt{
             width: 300px;
+            max-width: 90%;
             height: 160px;
         }
         h2{

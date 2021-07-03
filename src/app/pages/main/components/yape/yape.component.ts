@@ -47,6 +47,10 @@ export class YapeComponent implements OnInit {
     }
   }
 
+  openWeb() {
+    window.open('https://www.yape.com.pe', '_blank')
+  }
+
   isPhone() {
     const userAgent = navigator.userAgent || navigator.vendor
     if (/android/i.test(userAgent)) {

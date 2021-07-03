@@ -16,6 +16,7 @@
 
     --color-red-1:#FF3D30;
 }
+
 $primary: #F12832;
 $primary-dark: #d6222b;
 $adra: #007B5F;
@@ -47,7 +48,7 @@ body {
 	-webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     line-height: 1.2;
-    background-color: var(--color-gray-3);
+    background-color: white;
 }
 
 *{
@@ -58,7 +59,7 @@ body {
 // contenido de cada pagina
 
 .content-page{
-    padding-top: 110px;
+    padding-top: 20px;
     min-height: 100vh;
     background-color: white;
 }

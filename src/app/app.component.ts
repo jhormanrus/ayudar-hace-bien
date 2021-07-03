@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   year = new Date().getFullYear() //* Current year for footer
+
+  goTo(id: string) {
+    setTimeout(() => {
+      window.document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "start" })
+    })
+  }
 }

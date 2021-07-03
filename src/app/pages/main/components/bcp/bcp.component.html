@@ -1,7 +1,7 @@
-<div class="row justify-content-center mt-2 mb-4">
+<div class="row justify-content-center my-3">
     <div class="col-12">
         <div class="row justify-content-center align-items-center">
-            <div class="col-xl-3 col-4 text-center d-none d-lg-block">
+            <div class="col-4 text-center d-none d-lg-block">
                 <div class="row justify-content-center">
                     <div class="col-9">
                         <img draggable="false" style="width: 70%;" src="assets/img/bcp.png" alt="caja bcp">
@@ -10,7 +10,7 @@
                 <span class="font-weight-bold">Con tus donaciones llevaremos en nuestra unidad móvil de apoyo humanitario:</span><br>
                 <span>alimento, ayuda y esperanza a familias que sufren a consecuencia de las emergencias, desastres y crisis sanitaria.</span>
             </div>
-            <div class="col-xl-4 col-lg-5 col-md-7 col-12">
+            <div class="col-lg-5 col-md-7 col-12">
                 <h5 class="font-weight-bold text-center mb-3">Dona desde el<br>app del BCP</h5>
                 <div class="card">
                     <div class="card-body my-2">
@@ -51,12 +51,12 @@
                             </div>
                         </div>
                         <div class="form-group text-center mt-4 mb-1">
-                            <button (click)="openApp()" class="btn btn-bcp font-weight-bold">
+                            <button *ngIf="isPhone()" (click)="openApp()" class="btn btn-bcp font-weight-bold">
                                 ABRIR APP <i class="fa fa-external-link-alt"></i>
                             </button>
-                            <ng-container *ngIf="!isPhone()">
-                                <br><span class="text-white">Solo en celulares</span>
-                            </ng-container>
+                            <button *ngIf="!isPhone()" (click)="openWeb()" class="btn btn-bcp font-weight-bold">
+                                ABRIR WEB <i class="fa fa-external-link-alt"></i>
+                            </button>
                         </div>
                     </div>
                 </div>

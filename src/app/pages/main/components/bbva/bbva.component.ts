@@ -46,6 +46,10 @@ export class BbvaComponent implements OnInit {
     }
   }
 
+  openWeb() {
+    window.open('https://www.bbva.pe', '_blank')
+  }
+
   isPhone() {
     const userAgent = navigator.userAgent || navigator.vendor
     if (/android/i.test(userAgent)) {
