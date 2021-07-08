@@ -17,10 +17,10 @@
         </button>
         <div class="collapse navbar-collapse raa" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" aria-current="page" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" aria-current="page" routerLink="" (click)="goTo('inicio')" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
                 <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="" (click)="goTo('comoayudar')">¿Cómo ayudar?</a>
                 <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="" (click)="goTo('porqueayudar')">¿Por qué ayudar?</a>
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="/como-donar" routerLinkActive="active">¿Cómo donar?</a>
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="" (click)="goTo('comodonar')">¿Cómo donar?</a>
                 <a class="nav-link nav-voluntario" style="cursor: pointer;" href="https://www.adra.org.pe/voluntariado">
                     <span>Únete como voluntario</span>
                 </a>
@@ -35,6 +35,7 @@
     </span>
 </a>
 <main>
+    <app-landing></app-landing>
     <router-outlet></router-outlet>
 </main>
 <footer class="d-flex align-items-center" style="background-color: var(--color-gray-3);color:white;height: 20px;width: 100%;padding: 0 10px;">

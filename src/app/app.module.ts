@@ -7,6 +7,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { PorqueAyudarComponent } from './pages/porque-ayudar/porque-ayudar.component';
 import { ComoAyudarComponent } from './pages/como-ayudar/como-ayudar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MainModule } from './pages/main/main.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     MetafrenzyModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    MainModule
   ],
   providers: [],
   bootstrap: [AppComponent]

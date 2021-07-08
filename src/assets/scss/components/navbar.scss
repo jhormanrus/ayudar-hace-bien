@@ -1,17 +1,18 @@
-.header-adra{
-    position: absolute;
+.header-adra {
+    position: fixed;
     width: 100%;
     z-index: 10;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
-.navbar-adra{
+
+.navbar-adra {
     background-color: var(--color-green-1);
-    .green-logo{
+    .green-logo {
         display: none;
     }
 }
 
-.unete{
+.unete {
     display: none;
 }
 
@@ -19,11 +20,14 @@
     cursor: pointer;
 }
 
-@media (max-width: 576px) and  (min-width: 0px){ 
-    .navbar{
+@media (max-width: 576px) and  (min-width: 0px) {
+    .header-adra {
+        position: absolute;
+    }
+    .navbar {
         z-index: 1;
     }
-    .unete{
+    .unete {
         display: block;
         position: sticky;
         top: -4px;
@@ -33,7 +37,7 @@
         justify-content: center;
         align-items: center;
         z-index: 2;
-        span{
+        span {
             background-color: var(--color-green-1);
             padding: 10px 10px 5px 10px;
             border-radius: 0 0 7px 7px;
@@ -41,6 +45,7 @@
         }
     }
 }
+
 .navbar-adra *{
     color: white;
 }
@@ -74,7 +79,6 @@
     font-size: .85rem;
 }
 
-
 @media  (min-width: 1400px){ 
     .navbar-collapse{
         display: flex;
@@ -105,8 +109,8 @@
         gap: 10px;
     }
 }
+
 @media (max-width: 576px) { 
-    
     .nav-information{
         div{
             display: flex;

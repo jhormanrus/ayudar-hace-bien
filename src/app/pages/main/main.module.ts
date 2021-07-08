@@ -20,6 +20,9 @@ import { MetafrenzyModule } from 'ngx-metafrenzy';
     CommonModule,
     MainRoutingModule,
     MetafrenzyModule
+  ],
+  exports: [
+    MainComponent
   ]
 })
 export class MainModule { }

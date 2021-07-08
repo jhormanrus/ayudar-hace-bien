@@ -1,14 +1,15 @@
-.hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
 .content-page {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    .hero {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 }
 
 .footer-mobile{
