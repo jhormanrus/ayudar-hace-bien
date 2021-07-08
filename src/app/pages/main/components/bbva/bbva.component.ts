@@ -17,7 +17,7 @@ export class BbvaComponent implements OnInit {
     this.metafrenzyService.setOpenGraph({
       title: '#AyudarHaceBien - BBVA',
       site_name: 'AyudarHaceBien',
-      url: 'http://ayudarhacebien.pe/como-donar/bbva',
+      url: 'http://ayudarhacebien.pe/bbva',
       'image:secure_url': 'https://i.ibb.co/QcW36vM/bbva.jpg',
       'image:width': '960',
       'image:height': '500'

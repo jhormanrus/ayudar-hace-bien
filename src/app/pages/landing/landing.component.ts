@@ -30,4 +30,10 @@ export class LandingComponent implements OnInit, AfterViewInit {
     this.router.navigate(['como-donar'])
     $('body').removeClass('loaded')
   }
+
+  goTo(id: string) {
+    setTimeout(() => {
+      window.document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "start" })
+    })
+  }
 }

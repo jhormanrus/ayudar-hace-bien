@@ -61,8 +61,15 @@ body {
 
 .content-page{
     padding-top: 20px;
-    min-height: 100vh;
+    min-height: calc(100vh - 82px);
     background-color: white;
+    scroll-margin: 82px;
+}
+
+@media (max-width: 576px) and  (min-width: 0px) {
+    .content-page {
+        scroll-margin: unset;
+    }
 }
 
 // titulo de cada pagina

@@ -116,6 +116,11 @@
 }
 
 @media (max-width: 880px) and (min-width: 385px) { 
+    .container-ayuda{
+        h6{
+            text-align: center !important;
+        }
+    }
     .boxes{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -128,6 +133,12 @@
 }
 
 @media (max-width: 385px) and  (min-width: 0px){ 
+    .container-ayuda{
+        h6{
+            text-align: center !important;
+            font-size: .9rem;
+        }
+    }
     .boxes{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -136,6 +147,7 @@
                 width: 120px;
             }
         }
+        padding: 0 10px;
     }
     .notice {
         p{
