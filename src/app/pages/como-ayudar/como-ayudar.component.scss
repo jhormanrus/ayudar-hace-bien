@@ -80,22 +80,24 @@
             align-items: center;
             justify-content: center;
             background: var(--color-green-1);
-            width: 40px;
-            height: 40px;
+            width: 34px;
+            height: 34px;
             border-radius: 50%;
             color: white;
             span{
                 font-size: .4rem;
             }
             .number{
-                font-size: 1rem;
+                font-size: .9rem;
                 font-weight: bold;
+                line-height: 1;
             }
         }
         &__band {
             background-color: var(--color-red-1);
             color: white;
             font-weight: bold;
+            font-size: .9rem !important;
         }
     }
 }
@@ -139,15 +141,17 @@
             font-size: .9rem;
         }
     }
-    .boxes{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        .box{
-            img{
-                width: 120px;
+    .boxes__parent {
+        padding: 0 10px;
+        .boxes{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .box{
+                img{
+                    width: 120px;
+                }
             }
         }
-        padding: 0 10px;
     }
     .notice {
         p{
