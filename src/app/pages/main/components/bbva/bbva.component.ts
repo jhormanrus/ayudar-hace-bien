@@ -32,6 +32,7 @@ export class BbvaComponent implements OnInit {
       trigger: 'click',
       container: '.form-group'
     })
+    window.location.hash = '#comodonar'
   }
 
   hideTooltip() {

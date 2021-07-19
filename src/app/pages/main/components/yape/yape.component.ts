@@ -33,6 +33,7 @@ export class YapeComponent implements OnInit {
       container: '.form-group',
       
     })
+    window.location.hash = '#comodonar'
   }
 
   hideTooltip() {
