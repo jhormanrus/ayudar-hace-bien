@@ -15,7 +15,7 @@ export class YapeComponent implements OnInit {
   constructor(private readonly metafrenzyService: MetafrenzyService) {
     this.metafrenzyService.setMetaTag('theme-color', '#9B1489')
     this.metafrenzyService.setOpenGraph({
-      title: '#AyudarHaceBien - Yape',
+      title: 'Ayudar hace bien - Yape - Colecta de ADRA PERÚ',
       site_name: 'AyudarHaceBien',
       url: 'http://ayudarhacebien.pe/yape',
       'image:secure_url': 'https://i.ibb.co/grwfgkx/yape.jpg',

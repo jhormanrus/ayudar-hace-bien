@@ -11,7 +11,7 @@ export class InicioComponent {
   constructor(private readonly metafrenzyService: MetafrenzyService) {
     this.metafrenzyService.setMetaTag('theme-color', '#007B5F')
     this.metafrenzyService.setOpenGraph({
-      title: '#AyudarHaceBien',
+      title: 'Ayudar hace bien - Colecta de ADRA PERÚ',
       site_name: 'AyudarHaceBien',
       url: 'http://ayudarhacebien.pe',
       'image:secure_url': 'https://i.ibb.co/pXNB4tP/COMPARTE-REDES-SOCIALES-IMAGEN-PREVIA.png',

@@ -15,7 +15,7 @@ export class BcpComponent implements OnInit {
   constructor(private readonly metafrenzyService: MetafrenzyService) {
     this.metafrenzyService.setMetaTag('theme-color', '#FF6944')
     this.metafrenzyService.setOpenGraph({
-      title: '#AyudarHaceBien - BCP',
+      title: 'Ayudar hace bien - BCP - Colecta de ADRA PERÚ',
       site_name: 'AyudarHaceBien',
       url: 'http://ayudarhacebien.pe/bcp',
       'image:secure_url': 'https://i.ibb.co/6Zr9yMB/bcp.jpg',

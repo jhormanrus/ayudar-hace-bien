@@ -15,7 +15,7 @@ export class BbvaComponent implements OnInit {
   constructor(private readonly metafrenzyService: MetafrenzyService) {
     this.metafrenzyService.setMetaTag('theme-color', '#002048')
     this.metafrenzyService.setOpenGraph({
-      title: '#AyudarHaceBien - BBVA',
+      title: 'Ayudar hace bien - BBVA - Colecta de ADRA PERÚ',
       site_name: 'AyudarHaceBien',
       url: 'http://ayudarhacebien.pe/bbva',
       'image:secure_url': 'https://i.ibb.co/QcW36vM/bbva.jpg',

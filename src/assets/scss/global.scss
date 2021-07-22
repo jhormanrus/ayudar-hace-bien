@@ -16,10 +16,12 @@
 
     // red
     --color-red-1:#F12832;
+    --color-orange-1: #F96400;
+    --color-orange-2: #E1620E;
 }
 
 $primary: #F12832;
-$primary-dark: #d6222b;
+$primary-dark: #D6222B;
 $adra: #007B5F;
 $adra-dark: #006D54;
 $adra-shadow: RGBA(0,123,95,.25);
@@ -44,7 +46,6 @@ body {
     position: relative;
     color: var(--color-black-1);
     font-size: 14px;
-    min-height: 100vh;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
     overflow-x: hidden;
