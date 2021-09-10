@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainModule } from './pages/main/main.module';
 import { UneteComoVoluntarioComponent } from './pages/unete-como-voluntario/unete-como-voluntario.component';
+import { CentrosAcopioComponent } from './pages/centros-acopio/centros-acopio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UneteComoVoluntarioComponent
+    UneteComoVoluntarioComponent,
+    CentrosAcopioComponent
   ],
   imports: [
     AppRoutingModule,

@@ -1,0 +1,83 @@
+.content-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 82px);
+    margin-top: 82px;
+    .container-centros {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        
+    }
+}
+
+.notice {
+    background: var(--color-green-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 18px;
+    gap: 20px;
+    color: white;
+    &__action{
+        background-color: var(--color-yellow-1);
+        color: black;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 880px) and  (min-width: 0px) {
+    .notice h5 {
+        font-size: 1em;
+    }
+}
+
+.box {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    &__red {
+        background-color: var(--color-red-1);
+    }
+    &__yellow {
+        background-color: var(--color-yellow-1);
+    }
+}
+
+.card-acopio {
+    display: flex;
+    align-items: center;
+    border: solid 3px var(--color-green-1);
+    border-radius: 16px;
+    gap: 10px;
+    padding: .5rem 1rem;
+}
+
+.ub-icon {
+    width: 20px;
+}
+
+.list__title {
+    text-align: center;
+    h6 {
+        font-weight: bold;
+        color: #007B5F;
+    }
+}
+
+.list-group-flush > .list-group-item {
+    border-style: dashed;
+    border-width: 0 0 2px;
+    &:last-child {
+        border-bottom-width: 0;
+    }
+}
+
+.border__bottom {
+    border-bottom-width: 2px !important;
+}
