@@ -21,7 +21,7 @@
                 <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="" (click)="goTo('comoayudar')">¿Cómo ayudar?</a>
                 <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="" (click)="goTo('porqueayudar')">¿Por qué ayudar?</a>
                 <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="" (click)="goTo('comodonar')">¿Cómo donar?</a>
-                <a class="nav-link nav-voluntario" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="unete-como-voluntario">
+                <a class="nav-link nav-voluntario" href="https://www.adra.org.pe/voluntariado">
                     <span>Únete como voluntario</span>
                 </a>
             </div>
@@ -29,7 +29,7 @@
     </div>
 </nav>
 </header>
-<a [style.visibility]="inUneteComoVoluntario()? 'hidden' : 'visible'" routerLink="unete-como-voluntario" class="unete">
+<a [style.visibility]="inUneteComoVoluntario()? 'hidden' : 'visible'" href="https://www.adra.org.pe/voluntariado" class="unete">
     <span>
         ÚNETE COMO VOLUNTARIO
     </span>
