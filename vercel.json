@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "public": true,
+  "name": "ayudar-hace-bien-ssr",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api" }
+  ],
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/ayudar-hace-bien/browser/**"
+    }
+  }
+}
